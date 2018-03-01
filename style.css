@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*   COMMON   */
+html{ font-size: 62.5%; }
+body{ font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; font-size: 1.4rem; line-height: 1.6; letter-spacing: .1em; color: #222; background-color: #fcfcfc;}
+a{ text-decoration: none; }
+header { margin-bottom: 20px; width: 100%; position: relative;}
+header h1{ position: absolute; color: #fff; text-align: center; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 100%; z-index: 2;}
+footer { background-color:  #eee; width: 100%;}
+h3 img { display: block; margin: 0 auto; width: 110px;}
+.btn a{ background: #ccc; color: #fff; display: block; height: 40px; line-height: 40px; margin: 0 auto; text-align: center; width: 100%;}
+
+/*   PC   */
+@media (min-width: 769px) {
+  header { height: 500px; overflow: hidden; background: url(./images/img_main.jpg) center top / cover;}
+  header h1 { font-size: 36px;}
+  h2 { margin:  60px auto; text-align: center; font-size: 30px; }
+  .flex-box { display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content:space-between; margin: 0 auto; width: 80%;}
+  .flex-box > div { background-color: #ccc; width: 30%;}
+  h3 { background-color: #eee; font-size: 26px; padding: 20px 5%; text-align: center;}
+  .flex-box p { font-size: 14px; text-align: left; padding: 20px 5%;}
+  footer { margin-top: 60px; padding: 40px 0;}
+  footer p{ font-size: 14px; text-align: center;}
+  .btn { margin: 20px auto 0; width: 300px;}
+}
+
+/*   SP   */
+@media (max-width: 768px) {
+  header { height:  250px; overflow: hidden; width: 100%; background: url(./images/img_main.jpg) center top / cover; }
+  header h1 { font-size: 30px;}
+  h2 { margin:  40px auto; text-align: center; font-size: 24px; width: 90%; }
+  .flex-box { display: block; margin: 0 auto; width: 90%;}
+  .flex-box > div { background-color: #ccc; margin: 0 auto 20px; width: 100%;}
+  h3 { background-color: #eee; font-size: 26px; padding: 15px 5%; text-align: center;}
+  .flex-box p { font-size: 14px; text-align: left; padding: 15px 5%;}
+  footer { padding: 30px 0;}
+  footer p{ font-size: 14px; margin: 0 auto; text-align: center; width:  90%;}
+  .btn { margin: 20px auto 0; width: 80%;}
+}
